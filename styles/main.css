@@ -1,0 +1,15 @@
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    display: inline-block;
+    padding: 2px;
+    text-decoration: none;
+    background-color: teal;
+    width: 80%
+}
+
+h1{
+    color: green;
+}
