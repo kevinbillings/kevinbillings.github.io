@@ -1,3 +1,4 @@
 const myName = "Kevin Billings";
+let weeksRemain = 11;
 
-let weeks = 13;
+
