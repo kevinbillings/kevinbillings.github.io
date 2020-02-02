@@ -4,10 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week X Notes</title>
+    <title>Week 4 Notes</title>
+    <script src='scripts/main.js'></script>
+
+    <style>
+      
+        #board {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            width: 300px;
+            height: 300px;
+            margin: 50px auto 50px;
+        }
+        
+        #board div {
+            border-right: 1px solid gray;
+            border-bottom: 1px solid gray;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-weight: bold;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            
+        }
+        
+        #board div:nth-child(3), #board div:nth-child(6), #board div:nth-child(9){
+            border-right: 0;
+        }
+        
+        #board div:nth-child(7), #board div:nth-child(8), #board div:nth-child(9){
+            border-bottom: 0;
+        }
+        
+        div.reset {
+            text-align: center;
+        }
+        
+        #reset {
+            padding: 15px 50px;
+            font-weight: bold;
+            font-size: 20px;
+            background: red;
+            color: #fff;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <h1>Week X Notes</h1>
-    <img src="images/wip.gif" alt="Um, this isn't actually done yet" style="width:375px;">
+    <a href="index.html">Return Home to Index</a>
+    <h1>Week 4 Notes</h1>
+    <p>This week covers Ch8: Forms, Ch12: Object Oriented Programming, Ch15: Modern JavaScript (Modular) </p>
+    <p>Forms - one of the top methods to interact with a webpage.</p>
+    <h2>Disable The Submit Button until ready</h2>
+    &emsp; &lt;button type='submit' id='submit' disabled&gt;Submit&lt;/button&gt;
+
+
+<h2>OOP</h2>
+<p>Object-Oriented Programming (OOP) separates the code into objects and their methods.</p>
+<p>Encapsulation - All the processing that needs to be done for a specific task is done internally while the user only sees the result.</p>
+<p>Polymorphism - Where the same process can be done for different objects.  i.e. an on/off switch or in coding terms sharing the same method.</p>
+<p>Inheritance - Takes existing features from an object and adds a few more.</p>
+<p>Getters and Setters to safely access the internal variables.</p>
+<h2>DOM Manipulation</h2>
+<p>The Document Object Model (DOM) allows programs to dynamically access and update content.</p>
+<p>Keeping the code loosely coupled means that it is easy to change/upgrade pieces of code as necessary.</p>
+
+<h2>Tic-Tac-Toe Mobile Test</h2>
+
+<div id="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+  </div>
+  
+  <div class="reset">
+      <button id="reset">RESET</button>
+  </div>
+  
+<script>
+    
+    const winningCombos = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6], 
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+    
+    let playerTurn = "X";
+    let winner;
+    var cells = document.querySelectorAll(".cell");
+    
+    
+    function getWinner(){
+        let winner = null;
+        
+        winningCombos.forEach(function(combo, index) {
+        
+            if (cells[combo[0]] && cells[combo[0]] === cells[combo[1]] && cells[combo[0]] === cells[combo[2]]) winner = cells[combo[0]];
+        });
+        
+        return winner;
+    }
+
+    cells.forEach(function(cell) {
+        cell.addEventListener("touchend", turns);
+        
+        function turns() {
+            if (playerTurn == "X") {
+                cell.innerHTML = "X";
+                playerTurn = "O";
+            } else {
+                cell.innerHTML = "O";
+                playerTurn = "X";
+            }   
+        }
+        
+        winner = getWinner();
+    });
+    
+    
+    const resetButton = document.getElementById("reset").addEventListener("click", reset);
+    
+
+    function reset(){
+        cells.forEach(function(cell) {
+            cell.innerHTML = "";
+        });
+    }
+    
+</script>
+
 </body>
 </html>
