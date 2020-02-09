@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week X Notes</title>
+    <title>Week 5 Notes</title>
+    <script src='scripts/main.js'></script>
 </head>
 <body>
-    <h1>Week X Notes</h1>
-    <img src="images/wip.gif" alt="Um, this isn't actually done yet" style="width:375px;">
+    <a href="index.html">Return Home to Index</a>
+    <h1>Week 5 Notes</h1>
+    <p>This week covers Ch10: Testing and Debugging</p>
+    <p>Thank you Bro. Thayne for the detailed overview and explanation of our project during the All-Hands this week.</p>
+    <h2>Debugging</h2>
+    <p>The console has some really neat built-in functionality for debugging.<br/>
+    &emsp; debugger();<br/><br/>
+    <p>Simply entering debugger(); into the code will set break points to check what is currently going on in the code.<br/>
+    <h2>Error Objects</h2>
+    <p>Yup, you read that right.  We can create error objects for certain exceptions in the code.</p>
+    <p>const error = new Error('Oops, something went wrong');</p>
+    <p>Try - Catch - Finally</p>
+    <p>function imaginarySquareRoot(number) {<br/>
+    &emsp;'use strict';<br/>
+    &emsp;let answer;<br/>
+    &emsp;try {<br/>
+    &emsp;&emsp;answer = String(squareRoot(number));<br/>
+    &emsp;} catch(error) {<br/>
+    &emsp;answer = squareRoot(-number)+"i";<br/>
+    &emsp;} finally {<br/>
+    &emsp;&emsp;return `+ or - ${answer}`;<br/>
+    &emsp;}<br/>
+    }
 </body>
 </html>
