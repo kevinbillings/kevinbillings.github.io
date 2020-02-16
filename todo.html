@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kevin's To-Do App</title>
+    <link rel="stylesheet" href="styles/task.css">
+    <script src='scripts/todo.js' type="module"></script>
+</head>
+<body>
+    <a href="index.html">Return Home to Index</a>
+    <h1>ToDo List</h1>
+    <table>
+        <thread>
+            <tr>
+                <th>!------Task------!</th>
+                <th>Done</th>
+                <th>Delete</th>
+            </tr>
+        </thread>
+        <tbody></tbody>
+    </table>
+    <form action="">
+        <div>
+            <label for="content">Create Task: </label>
+            <input type="text" id="content" name="content" focus>
+        </div>
+        <div>
+            <input type="button" class="btn1" id="btn-add-task" value="Add Task" onclick="addTask()">
+            <input type="button" class="btn2" id="btn-all" value="All" onclick="">
+            <input type="button" class="btn3" id="btn-active" value="Active" onclick="">
+            <input type="button" class="btn4" id="btn-complete" value="Completed" onclick="">
+        </div>
+    </form>
+    
+</body>
+</html>
