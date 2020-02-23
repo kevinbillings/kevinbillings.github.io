@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week X Notes</title>
+    <title>Week 7 Notes</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src='scripts/main.js'></script>
 </head>
 <body>
-    <h1>Week X Notes</h1>
-    <img src="images/wip.gif" alt="Um, this isn't actually done yet" style="width:375px;">
+    <a href="index.html">Return Home to Index</a>
+    <h1>Week 7 - Half Way There!!!</h1>
+    <p>This week covered Ch 11: Further Functions, and Ch 13: AJAX.</p>
+    <h2>Functions</h2>
+    <p>Functions are first-class objects.  They have a length property that will tell the number of parameters they have.  I.E. "addStudent.length"</p>
+    <p>The "call()" method can be used to set the value of 'this'</p>
+    <p>There are temporary variables called temp.</p>
+    <p>Functions can define and rewrite themselves?!</p>
+    <p>function party(){</p>
+    &emsp;console.log('Wow this is amazing!');<br/>
+    &emsp;party = function () {<br/>
+    &emsp;&emsp;console.log('Been there, got the T-Shirt');<br/>
+    &emsp;}<br/>
+    }<br/>
+    <p>Recursive functions call themselves until a set condition is met.</p>
+    <p>You can return a function from a function in JavaScript.</p>
+    <h2>AJAX and not the stuff you clean the bathroom with.</h2>
+    <p>The web of computers known as the internet can be separated into two parts: clients and servers. A client, such as a web browser, will request
+       a resource (usually a web page) from a server, which processes the request and sends back a response to the client.  JavaScript was originally 
+       designed as a client-side scripting language, meaning that it ran locally in the browser, adding dynamic features to the web page that was returned 
+       from the server. Ajax allows JavaScript to request resources from a server on behalf of the client. The resources requested are usually JSON data 
+       or small fragments of text or HTML rather than a whole web page.</p>
+    <p>AJAX will allow multiple pieces of the software to run at the same time without waiting for each serial piece to complete.  It is Asynchronous.</p>
+    <h2>The Fetch API is how to send Asynchronous data accross a network.</h2>
+    <p>Firebase is a neat method to store data online.  Juggling between local and network storage you can keep track of data in an app and upload the next 
+       time you are connected to the network.</p>
 </body>
 </html>
