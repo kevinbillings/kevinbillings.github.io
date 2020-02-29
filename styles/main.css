@@ -19,3 +19,19 @@ input {
 }
 
 .tab { margin-left: 40px; }
+
+h2 span {
+    color: red;
+    transform: translateX(45px) translateY(-20px); 
+    display: inline-block
+}
+
+/* Note img.rotate did not work */
+img.rot {
+    transform: rotate(20deg);
+}
+
+.myCanvas {
+    border: dotted 2px black;
+    margin: 0 20px;
+}
