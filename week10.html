@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Week X Notes</title>
+    <title>Week 10 Notes</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src='scripts/main.js'></script>
 </head>
+
 <body>
-    <h1>Week X Notes</h1>
-    <img src="images/wip.gif" alt="Um, this isn't actually done yet" style="width:375px;">
+    <a href="index.html">Return Home to Index</a>
+    <h1>Week 10</h1>
+    <p>Readings: Forms and Fetch</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation">MDN: Validating forms</a></br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN: Using Fetch</a>
+    </p>
+    <h2>Validating Forms</h2>
+    <p>You must check all the forms before submitting their contents to the server.  This is called client-side form validation.
+    If you catch any issues immediately they can be fixed by the user.  However, you also need to check the data at the server side before committing it to the database to ensure we are not allowing a SQL Injection Attack.  
+
+    <form>
+        <div>
+          <label for="choose">Would you prefer a banana or a cherry?</label>
+          <input type="text" id="choose" name="i_like" required minlength="6" maxlength="6">
+        </div>
+        <div>
+          <label for="number">How many would you like?</label>
+          <input type="number" id="number" name="amount" value="1" min="1" max="10">
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+
+    <h2>Using Fetch</h2>
+    <p>The MDN: Using Fetch link above and the Firebase Documentation is a great place to start.</p>
+    <a href="https://firebase.google.com/docs">Firebase Docs</a>
+
+    <h2>Team Activity:</h2>
+    <a href="Quakes/quakes.html">Earthquake Watch</a>
+
 </body>
 </html>
