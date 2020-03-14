@@ -1,4 +1,2 @@
 const myNameIs = "Kevin Billings";
-let weeksRemain = 11;
-
-
+let weeksRemain = 4;
