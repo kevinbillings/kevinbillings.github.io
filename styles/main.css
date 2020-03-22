@@ -1,17 +1,58 @@
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #EFEFEF;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+body {
+    background: #3D5E80;
+    margin: 0;
+    padding: 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    padding: 0px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    background-color: #111;
+}
+
 ul {
     list-style-type: none;
+    color: #EFEFEF;
 }
 
 ul a {
     display: inline-block;
-    padding: 2px;
+    padding: 1px;
     text-decoration: none;
-    background-color: teal;
-    width: 80%
-}
-
-h1{
-    color: green;
+    background-color: gray;
+    width: 100%
 }
 
 input {
@@ -31,7 +72,71 @@ img.rot {
     transform: rotate(20deg);
 }
 
+/* Note img.rotate did not work */
 .myCanvas {
     border: dotted 2px black;
     margin: 0 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul#mainNav {
+    list-style-type: none;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+ul#mainNav li {
+    display: inline-block;
+}
+
+ul#mainNav li a {
+    background: #1D1F21;
+    color: #3D5E80;
+    text-decoration: none;
+    display: block;
+    padding: 7px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul#mainNav li a:hover {
+    background: #D0CFD4;
+    color: #1D1F21;
+}
+
+#radius {
+    width: 150px;
+    padding: 0;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+}
+
+#radiusList {
+    list-style-type: none;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+    color: #EFEFEF;
+}
+
+#radiusList button {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 10px;
+    height: 40px;
+    background: #1D1F21;
+    border: 0;
+    color: #3D5E80;
+    font-size: 16px;
 }
