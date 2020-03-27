@@ -16,6 +16,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #EFEFEF;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
 body {
     background: #3D5E80;
     margin: 0;

@@ -1,3 +1,39 @@
+nav {
+    padding: 0px 0px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+  
+nav a:hover {
+    background-color: #111;
+}
+
+body {
+    background: lightgrey;
+    margin: 0;
+    padding: 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    padding: 10px; 
+    border-bottom:2px solid black;
+    text-align: inline-block;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
 ul {
     list-style-type: none;
 }
@@ -7,7 +43,7 @@ ul a {
     padding: 2px;
     text-decoration: none;
     background-color: teal;
-    width: 80%
+    width: 90%
 }
 
 h1{
