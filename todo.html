@@ -5,34 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kevin's To-Do App</title>
-    <link rel="stylesheet" href="styles/task.css">
+    <link rel="stylesheet" href="styles/todo.css">
     <script src='scripts/todo.js' type="module"></script>
 </head>
 <body>
-    <a href="index.html">Return Home to Index</a>
-    <h1>ToDo List</h1>
-    <table>
-        <thread>
-            <tr>
-                <th>!------Task------!</th>
-                <th>Done</th>
-                <th>Delete</th>
-            </tr>
-        </thread>
+    <header>
+        <nav><a href="index.html">Return Home to Index</a></nav>
+        <p></p>
+    </header>
+    <img src="images/ToDo.png" alt="ToDo App" style="width:335px;">
+    <main>
+    <table width="335" >
         <tbody></tbody>
     </table>
     <form action="">
         <div>
-            <label for="content">Create Task: </label>
-            <input type="text" id="content" name="content" focus>
+            <input type="text" id="content" name="content" style="height:20px; width:260px;" focus>
+            <input type="button" class="btn1" id="btn-add-task" value="Add Task" onclick="addTask()">
         </div>
         <div>
-            <input type="button" class="btn1" id="btn-add-task" value="Add Task" onclick="addTask()">
-            <input type="button" class="btn2" id="btn-all" value="All" onclick="">
-            <input type="button" class="btn3" id="btn-active" value="Active" onclick="">
-            <input type="button" class="btn4" id="btn-complete" value="Completed" onclick="">
+            
+            <input type="button" class="btn2" id="btn-all" value="All" onclick="loadTasks()">
+            <input type="button" class="btn3" id="btn-active" value="Active" onclick="activeTasks()">
+            <input type="button" class="btn4" id="btn-complete" value="Completed" onclick="doneTasks()">
         </div>
     </form>
-    
+    </main>
+
+    <footer></footer>
 </body>
 </html>
