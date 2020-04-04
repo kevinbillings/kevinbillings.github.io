@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Data Management</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script src='scripts/main.js'></script>
+    <link rel="stylesheet" href="styles/pdm.css">
+    <script src='scripts/pdm.js' type="module"></script>
 </head>
 
-<body>
-    <nav><a href="index.html">Return Home to Index</a></nav>
+<body onload="showName()">
+
+    <div class="dropdown">
+      <a class="dropbtn"><img src="images/engsol.png" alt="Header" style="width:355px;"></a>
+      <div class="dropdown-content">
+        <a href="pdm.html">Main</a>
+        <a href="pdmAssy.html">Assemblies</a>
+        <a href="pdmParts.html">Parts</a>
+        <a href="index.html">Logout (Return Home)</a>
+      </div>
+    </div>
+
+    <main>
+    <div class="btncontainer">
+    <input type="button" class="btn1" value="Change User" onclick="storeName()">&nbsp&nbsp&nbsp<div id="name"></div>
+    </div>
     <p></p>
-    
+    <h3>Welcome to the Product Data Management Service</h3>
+    <h4>This repository is the official storage location for all Technical Data Packages, Specifications, and finalized CAD databases.</h4>
+    <img src="images/engineering.jpg" alt="Engineering" style="width:355px;">
+    <p></p>
+    <h2>Parts</h2>
+    <a href="pdmParts.html" class="select"><img src="images/parts.jpg" alt="Parts" style="width:250px;"></a>
+    <h2>Assemblies</h2>
+    <a href="pdmAssy.html" class="select"><img src="images/assy.jpg" alt="Assemblies" style="width:275px;"></a>
+    <p></p>
+    </main>
+
+    <div id="footer">
+        <h2 class="footer">Engineering Solutions Proprietary</h2>
+    </div>
+
 </body>
 </html>

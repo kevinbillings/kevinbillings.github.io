@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Data Management</title>
+    <link rel="stylesheet" href="styles/pdm.css">
+    <script src='scripts/pdm.js' type="module"></script>
+</head>
+
+<body>
+
+  <div class="dropdown">
+      <a class="dropbtn"><img src="images/engsol.png" alt="ToDo App" style="width:350px;"></a>
+      <div class="dropdown-content">
+        <a href="pdm.html">Main</a>
+        <a href="pdmAssy.html">Assemblies</a>
+        <a href="pdmParts.html">Parts</a>
+        <a href="index.html">Logout (Return Home)</a>
+      </div>
+    </div>
+
+    <main>
+    <h3>Assemblies</h3>
+
+    <ul id="myUL">
+      <li><span class="caret">P-51D Mustang</span>
+        <ul class="nested">
+          <li>QTY 1 Packard V-12</li>
+          <li>37 Ft Wings</li>
+          <li>Mfg: Jan 1942</li>
+          <li><span class="caret">Inglewood, CA</span>
+            <ul class="nested">
+              <li>North American Aviation (NAA)</li>
+              <li>British Purchasing Commission</li>
+              <li>Royal Air Force (RAF)</li>
+            </ul>
+          </li>  
+        </ul>
+      </li>
+    </ul>
+
+    <ul id="myUL">
+      <li><span class="caret">B-17 Texas Raiders</span>
+        <ul class="nested">
+          <li>QTY 4 Wright R-1820</li>
+          <li>104 Ft Wings</li>
+          <li>Mfg: 1938</li>
+          <li><span class="caret">Spring, TX</span>
+            <ul class="nested">
+              <li>Texas Raiders</li>
+              <li>Flying Fortress</li>
+              <li>Commemorative Air Force</li>
+            </ul>
+          </li>  
+        </ul>
+      </li>
+    </ul>
+
+    <ul id="myUL">
+      <li><span class="caret">TBM-3 Doris Mae</span>
+        <ul class="nested">
+          <li>QTY 1 Wright R-2600</li>
+          <li>52 Ft Wings</li>
+          <li>Mfg: 1945</li>
+          <li><span class="caret">Inglewood, CA</span>
+            <ul class="nested">
+              <li>Torpedo Bomber</li>
+              <li>General Motors</li>
+              <li>US Marine Corps</li>
+            </ul>
+          </li>  
+        </ul>
+      </li>
+    </ul>
+    </main>
+
+    <div id="footer">
+        <h2 class="footer">Engineering Solutions Proprietary</h2>
+    </div>
+    
+</body>
+</html>

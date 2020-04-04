@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Data Management</title>
+    <link rel="stylesheet" href="styles/pdm.css">
+    <script src='scripts/pdm.js' type="module"></script>
+</head>
+
+<body onload= "hideFunction1, hideFunction2, hideFunction3">
+
+    <div class="dropdown">
+      <a class="dropbtn"><img src="images/engsol.png" alt="ToDo App" style="width:350px;"></a>
+      <div class="dropdown-content">
+        <a href="pdm.html">Main</a>
+        <a href="pdmAssy.html">Assemblies</a>
+        <a href="pdmParts.html">Parts</a>
+        <a href="index.html">Logout (Return Home)</a>
+      </div>
+    </div>
+
+    <main>
+    <h3>Standard Parts Library</h3>
+    <h4>These are the recommended parts that are available in company inventory.</h4>
+    <h4>To request a part be added to the standard library send a message to the <a href = "mailto: Library@engsol.com">Library Team</a></h4>
+    <p></p>
+    
+    <a class="select"><img src="images/screws.png" alt="Screws" style="width:100px;" onclick="hideFunction1()"></a></br>
+    <div id="showHide1">
+      <img src="images/firebase.png" alt="Firebase" style="width:150px;"></br>
+      <img src="images/firebase2.png" alt="Firebase" style="width:350px;"></br>
+    </div>
+    
+    <a class="select"><img src="images/nuts.png" alt="Nuts" style="width:100px;" onclick="hideFunction2()"></a></br>
+    <div id="showHide2">
+      <img src="images/nutchart.jpg" alt="Oh, Nuts" style="width:150px;"></br>
+    </div>
+
+    <a class="select"><img src="images/washer.png" alt="Washer" style="width:100px;" onclick="hideFunction3()"></a></br>
+    <div id="showHide3">
+      <img src="images/washerchart.jpg" alt="Don't get washed up" style="width:150px;"></br>
+    </div>
+    </main>
+
+    <div id="footer">
+        <h2 class="footer">Engineering Solutions Proprietary</h2>
+    </div>
+
+</body>
+</html>
