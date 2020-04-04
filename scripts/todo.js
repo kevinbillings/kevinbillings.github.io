@@ -7,6 +7,7 @@ if (localStorage.getItem("tasks")) {
     loadTasks();
 }
 
+// Using the onclick property - define functions
 window.addTask = addTask;
 window.loadTasks = loadTasks;
 window.activeTasks = activeTasks;
