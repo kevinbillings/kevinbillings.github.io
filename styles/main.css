@@ -61,7 +61,7 @@ ul a {
     display: inline-block;
     padding: 1px;
     text-decoration: none;
-    background-color: gray;
+    background-color: black;
     width: 100%
 }
 
@@ -136,7 +136,17 @@ ul#mainNav li a:hover {
     margin: 0 0 20px;
     padding: 0;
     text-align: center;
-    color: #EFEFEF;
+    color: darkgray;
+}
+
+#radiusList li {
+    margin-bottom: 2px;
+}
+
+#radiusList a {
+    display: block;
+    padding: 10px 15px;
+    color: darkgrey;
 }
 
 #radiusList button {
